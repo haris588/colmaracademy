@@ -272,7 +272,7 @@ a:hover{
 }
 
 /* Mobile section */
-@media only screen and (max-width: 738px){
+@media only screen and (max-width: 1080px){
 
     /* Header, navigation section */
     header {
@@ -405,7 +405,7 @@ footer p{
 
 }
 
-@media only screen and (min-width: 739px){
+@media only screen and (min-width: 1081px){
     #mobile-icons{
         display:none;
     }
