@@ -19,12 +19,12 @@ header{
 }
 
 header h2{
+    padding-left: 10px;
     font-weight: 400;
     color:gray;
 }
 
 header a{
-    text-decoration: none;
     color: black;
     opacity: 0.8;
 }
@@ -51,7 +51,8 @@ header a{
 }
 
 .logo img{
-    height:150%;
+   width: 150%;
+   height: auto;
 }
 
 nav{
@@ -68,6 +69,7 @@ ul {
     display:flex;
     justify-content: center;
     align-items: center;
+  
 }
 
 li {
@@ -75,6 +77,8 @@ li {
     justify-content: center;
     align-items: center;
     height:64px;
+    
+    
 }
 
 /* Banner section */
@@ -149,8 +153,7 @@ li {
     margin: 0 auto;
     background-color: rgba(196,198,201,0.5);
     }
-.container 
-    h1{
+.container h1{
     padding-top: 32px;
     padding-bottom: 32px;
     text-align: center;
@@ -268,4 +271,145 @@ a:hover{
     padding-bottom: 32px;
 }
 
+/* Mobile section */
+@media only screen and (max-width: 738px){
 
+    /* Header, navigation section */
+    header {
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    nav{
+        display:none;
+    }
+
+    .logo h2 {
+        display:none;
+    }
+    
+    .logo img{
+        width: 38px;
+        
+    }
+    
+    /* Banner section */
+    .main1{
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .container-left{
+        margin: 0 auto;
+        max-width: 100%;
+        padding: 0;
+    }
+    .container-right{
+        margin: 0 auto;
+        max-width: 100%;
+        padding: 0;
+    }
+    .banner2{
+        padding:0 16px;
+    }
+    .banner2 h1{
+        padding:32px 0;
+    }
+    .banner2 p{
+        font-size: 22px;
+    }
+    #button{
+        padding:8px 0;
+        margin-top:24px;
+        margin-bottom: 32px;
+    }
+    
+    /* Information section */
+   #border-right{
+    display:none;
+   }
+   #bigger-images{
+       display:none;
+   }
+    .item img{ 
+       max-width: 100%;
+   }
+   .item{
+    flex-direction: column;
+    padding: 0;
+    align-items: start;
+   }
+   .information-main-right{
+       padding:16px;
+   }
+
+ #double-border-top{
+     border:none;
+ }
+
+ #item3style{
+     background-color: white;
+     border-bottom: 1px solid rgba(196,198,201,0.5);
+ }
+
+ /* Learning section */
+.container{
+    background-color: white;
+    
+}
+.container h1{
+  padding-top 16px;
+  padding-bottom: 0;
+}
+.learning-main {
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(196,198,201,0.5);
+}
+
+
+
+.box{
+    background-color: rgba(196,198,201,0.6);
+    padding:16px;
+    margin: 8px 0;
+}
+.box img, .box p{
+    display:none;
+}
+
+
+ /* Thesis section */
+ #thesis, #thesis h1, #thesis p{
+    display:none;
+}
+.container-left{
+    width: 100%;
+}
+
+#title{
+    padding-bottom: 16px;
+}
+
+ /* footer section */
+footer p{
+    padding:16px
+}
+ ul{
+     display:none;
+ }
+
+
+
+
+
+
+}
+
+@media only screen and (min-width: 739px){
+    #mobile-icons{
+        display:none;
+    }
+
+    #mobile-images{
+    display:none;
+    }
